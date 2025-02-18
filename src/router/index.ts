@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHashHistory, createWebHistory, type RouteRecordRaw } from 'vue-router';
 
 import Layout from '@/layout/index.vue';
 
@@ -55,7 +55,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-	history: createWebHistory('/mobile/'), // history 模式则使用 createWebHistory()
+	history: createWebHashHistory(), // history 模式则使用 createWebHistory()
 	routes,
 });
 
