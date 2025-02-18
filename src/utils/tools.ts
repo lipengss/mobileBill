@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import numeral from 'numeral';
-import { filesize, type FileSizeReturnArray } from 'filesize';
+import { filesize } from 'filesize';
 import { isEqual, flatten, sortBy, cloneDeep } from 'lodash-es';
 import { Local, Session } from './storage';
 import { nanoid } from 'nanoid';

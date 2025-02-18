@@ -49,7 +49,7 @@ export default {
 import { ref, computed, watch, onActivated, watchEffect } from 'vue';
 import { EXPENSES, formatMap, PURPOSE, STATISTICS_TYPE, PAY_METHOD, formatNumber } from '@/assets/data';
 import { useBill } from '@/hooks/useBill';
-import { sortBy, dayjs, formatNum, convertToPercentages } from '@/utils/tools/src';
+import { sortBy, dayjs, formatNum, convertToPercentages } from '@/utils/tools';
 import { useChangeColor } from '@/hooks/useColor';
 import CheckBoxTag from '@/components/CheckBoxTag/index.vue';
 import PieChart from '@/components/PieChart/index.vue';

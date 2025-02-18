@@ -1,3 +1,7 @@
+declare module 'lodash-es';
+
+declare module '@/utils/tools';
+
 type EXPENSE_TYPE = 'income' | 'pay';
 
 interface IOrder {

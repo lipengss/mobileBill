@@ -54,7 +54,7 @@ import { EXPENSES, PURPOSE, PAY_METHOD } from '@/assets/data';
 import { useBillStore } from '@/stores/bill';
 import { useRouter, useRoute, type LocationQuery } from 'vue-router';
 import formData from '../formData.vue';
-import { cloneDeep, formatNum } from '@/utils/tools/src';
+import { cloneDeep, formatNum } from '@/utils/tools';
 
 const billStore = useBillStore();
 const router = useRouter();

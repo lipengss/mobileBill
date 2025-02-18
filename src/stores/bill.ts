@@ -49,7 +49,7 @@ export const useBillStore = defineStore('bill', {
 			function sum(list: number[]): number {
 				return list.reduce((pre, cur) => parseFloat(add(pre, cur)), 0);
 			}
-			return sortBy(Object.values(data), (n) => dayjs(n.date).valueOf()).reverse();
+			return sortBy(Object.values(data), (n: IOrder) => dayjs(n.date).valueOf()).reverse();
 		},
 	},
 	actions: {

@@ -119,7 +119,7 @@ export function exportBillDocx() {
 		return new Table({
 			rows: [
 				createTableHeaderRow(BillHeaderName),
-				...flatten(formatBillList.value.map((n) => n.list)).map((n) => {
+				...flatten(formatBillList.value.map((n: FormatBillItem) => n.list)).map((n: IOrder) => {
 					return new TableRow({
 						children: [
 							tableCell(dayjs(n.date).format('YYYY-MM-DD')),

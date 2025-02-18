@@ -95,9 +95,9 @@ const copyBill = reactive({
 	splitNum: '30',
 });
 
-const expandBillList = computed(() => flatten(formatBillList.value.map((n) => n.list)));
+const expandBillList = computed(() => flatten(formatBillList.value.map((n: FormatBillItem) => n.list)));
 
-const splitBillList = computed(() => splitArrayIntoChunks(expandBillList.value, Number(copyBill.splitNum)));
+const splitBillList = computed(() => splitArrayIntoChunks<IOrder>(expandBillList.value, Number(copyBill.splitNum)));
 
 const dataSourceRef = ref();
 
