@@ -12,9 +12,8 @@ const pathResolve = (dir: string) => resolve(__dirname, dir);
 
 // https://vitejs.dev/config/
 export default defineConfig((mode: ConfigEnv) => {
-	const env = loadEnv(mode.mode, process.cwd());
 	return {
-		base: process.env.NODE_ENV === 'productor' ? '/mobileBill/' : '/',
+		base: '/mobileBill/',
 		define: {
 			__VUE_OPTIONS_API__: true,
 			__VUE_PROD_DEVTOOLS__: false,
